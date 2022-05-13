@@ -15,7 +15,7 @@ Then, the preference profile is created from these animes. It is done by getting
 
 and the user's top 3 (in this case) genres are Action, Fantasy, and Psychological, the binary string will look like this:
 
-    10010
+    10011
     
 This is done for all the users in the dataset who has a corresponding record in the mined top 5 animes dataset. 
 
