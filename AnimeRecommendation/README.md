@@ -1,5 +1,8 @@
 # Anime Recommendation System using User-based Collaborative Filtering
 
+## Preliminaries
+The original datasets for this project come from [this Kaggle account](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database). The datasets included here are mined from the original datasets.
+
 ## Data Mining
 To be able to do recommendations using [collaborative filtering](https://builtin.com/data-science/collaborative-filtering-recommender-system) there is a need to establish a basis on which to compare users. For this project, 
 it is called a preference profile. A preference profile is defined as the 8 favorite anime genres per user. However, since the datasets do not provide such profiles, data mining is conducted to generate these profiles from existing data.
@@ -14,7 +17,9 @@ and the user's top 3 (in this case) genres are Action, Fantasy, and Psychologica
 
     10010
     
-This is done for all the users in the dataset who has a corresponding record in the mined top 5 animes dataset.
+This is done for all the users in the dataset who has a corresponding record in the mined top 5 animes dataset. 
+
+The top 5 animes and preference profile of all users in the original datasets are saved into csv, which will be used in the recommendations.
 
 
 ## Recommendation
