@@ -27,7 +27,7 @@ The top 5 animes and preference profile of all users in the original datasets ar
 The anime recommendation system is based on the concept of collaborative filtering. It works by executing these steps:
 
 1. Within a sample of 500 users, find 10 users with similar preference profiles (genres of interest) as the current user.
-  - This is done through the hamming distance, which is defined as the number of bit positions within two binary strings in which the two bits are not the same. Translating this into the use case, it measures how similar the preferences of the user from other users are --- a greater value means that the user and another user has different preferences, while a lower value implies the opposite.
+  - This is done through the hamming distance, which is a known similarity metric between two binary strings.  It is the number of bit positions in which two bits (one from each binary string) are not the same. Translating this into the use case, it measures how similar the preferences of the user from other users are - a greater value means that two users have very different preferences, while a lower value implies the opposite.
 2. If the recommendation specifies highly rated shows only, then only the 5 highest rated animes per user will be included in the list. If not, then every anime that the 10 users have watched will be included in the list in random order.
 3. Remove anime from the list that the current user has already seen.
 4. Get the first 20 animes from the list as a recommendation for the user.
