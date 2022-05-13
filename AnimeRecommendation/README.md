@@ -7,7 +7,7 @@ The original datasets for this project come from [this Kaggle account](https://w
 To be able to do recommendations using [collaborative filtering](https://builtin.com/data-science/collaborative-filtering-recommender-system) there is a need to establish a basis on which to compare users. For this project, 
 it is called a preference profile. A preference profile is defined as the 8 favorite anime genres per user. However, since the datasets do not provide such profiles, data mining is conducted to generate these profiles from existing data.
 
-The favorite anime genres are sourced from the animes with high user ratings, as it is assumed that a high rating implies that the user likes the anime and the genre transitively. Thus, the first step is to get the 5 highest-rated anime per user. It must be noted, however, that the number of anime that a certain user watches greatly varies within the dataset. This implies that some users may not reach 5 animes.
+The favorite anime genres are sourced from the animes with high user ratings, as it is assumed that a high rating implies that the user likes the anime and the genre transitively. Thus, the first step is to get the 5 highest-rated anime per user. It must be noted, however, that the number of anime that a certain user watches (and rates) greatly varies within the dataset. This implies that some users may not reach 5 animes.
 
 Then, the preference profile is created from these animes. It is done by getting the 8 most occuring genres in the user's 5 (at most) highest-rated anime. These genres are then turned into a binary string, which is based on the predefined arrangement of all genres in the anime dataset. As an example, if the arrangement is
 
